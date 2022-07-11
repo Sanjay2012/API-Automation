@@ -1,0 +1,17 @@
+## Required dependencies
+1. rest-assured
+2. testNg and Junit (depends)
+3. json-simple
+4. xml /ooxml
+5. apache poi
+6. maven compiler plugin
+7. maven surefire plugin
+8. log4j properties file
+9. reporter
+10. extend report
+11. json schema validator
+12. json path
+13. xml path
+14. java hamcrest
+15. hamcrest-core
+16. hamcrest-library

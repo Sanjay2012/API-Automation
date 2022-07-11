@@ -1,0 +1,52 @@
+{
+  "create": [
+    {
+      "Fname": "Tushar",
+      "Lname": "Kapoor",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "Fname": "Shiv",
+      "Lname": "Kumar",
+      "gender": "Male",
+      "id": 4
+    },
+    {
+      "Fname": "Vasim",
+      "Lname": "Shaikh",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "Fname": "Kirti",
+      "Lname": "Kapoor",
+      "gender": "Female",
+      "id": 7
+    },
+    {
+      "Fname": "Sameer",
+      "Lname": "Decriz",
+      "gender": "Female",
+      "id": 8
+    },
+    {
+      "Fname": "Sameer",
+      "Lname": "Decriz",
+      "gender": "Female",
+      "id": 11
+    },
+    {
+      "Fname": "Sameer",
+      "Lname": "Decriz",
+      "gender": "Female",
+      "id": 12
+    },
+    {
+      "Fname": "Sameer",
+      "Lname": "Decriz",
+      "gender": "Female",
+      "id": 13
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+## Github api
+
+https://docs.github.com/en/rest/repos
+un: pandhareshital01@gmail.com
+pass: Shiv@2020
+
+Generate token:
+- Go to profile--> settings---> Devloper settting
+- generate personal access token: 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
+
+
+
+===========================================================================================
+
+
+
+# JIRA API
+1. link for JIRA server software download: install version 8
+   https://www.atlassian.com/software/jira/download-journey
+ 
+ 2. JIRA API doc
+   https://docs.atlassian.com/software/jira/docs/api/REST/7.6.1/
+   
+ 3. Cookies based authontication
+    https://developer.atlassian.com/server/jira/platform/cookie-based-authentication/
+    
+  ## Step 1: POST request for acquiring cookies
+    POST:  http://localhost:8080/rest/auth/1/session
+    
+    --> in response we will get cookies 
+    --> use them in header for rest of the testing
+    
+    
+    Note:
+    
+    * SessionFilter session=new SessionFilter();
+    
+    --> filter(session);----> this is used to handle the session cookies
+    --> always write before when()
+    --> it will handle cookies throughout the class
+    
+    
+    * if we have more parameters in URL then write as PathParam in given section 
+      and refer them into when () section
+      
+      e.g   http://localhost:8080/rest/api/2/issue/{issueId}/comment/{commentId}
+      
+      So, define them as Path parameters as follow,
+      
+      pathParam("issueId", bugIssueId)
+      pathParam("commentId", bugCommentId).
+      
+      
+      *multiPart()--> method is used for attatchment
+      
+      multiPart("file", new File("fileLocation"))
+      
+    
+ ====================================================================================
+    
+    
+ ## Twitter API
+ 
+https://developer.twitter.com/en/docs/api-reference-index 
+ 

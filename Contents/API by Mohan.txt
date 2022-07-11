@@ -1,0 +1,249 @@
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2022-03/R/eclipse-java-2022-03-R-win32-x86_64.zip
+
+https://www.postman.com/downloads/
+
+java 1.8 above 
+
+Day-1
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EdOIJ1iHsRJDlOHi43PdJA8Bj0iO61v-_Kc7fN667HQffQ
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EZ6ql8-WytJMnlVdG-RPxBUByyVftrY-M83P4f5e6n4pIw
+
+https://howtodoinjava.com/testng/testng-executing-parallel-tests/
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+Day 2
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EUn60XtIUwFKu6tB57bRK8QBPUw1nUrv6E3W6x5hh2iVeQ
+
+Client server Architecture
+What is a client?
+What is a server?
+How does the client server architecture work?
+What are the different types of client server architectures?
+1-tier architecture
+2-tier architecture
+3-tier architecture
+N-tier architecture
+Advantages of using client server architecture?
+What are the drawbacks of client server architecture?
+
+What is HTTP Request?
+What are the different HTTP Request methods?
+And, what is the structure of an HTTP Request?
+GET vs. POST Method
+
+
+What is HTTP Response?
+What is the structure of an HTTP Response?
+And, what are different HTTP Response Status Codes?
+
+https://www.toolsqa.com/rest-assured/rest-architectural-elements/
+
+
+[5/19 9:13 AM] Mohan J (Guest)
+https://www.toolsqa.com/rest-assured/configure-rest-assured-with-eclipse/
+
+
+https://www.toolsqa.com/rest-assured/query-parameters-in-rest-assured/
+
+https://www.toolsqa.com/rest-assured-tutorial/
+
+Day-3
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/Ebjx2HT7LdBNhRA6sSnzc24BONlnIUubF3ZKz9JEiIbyQQ
+
+https://mvnrepository.com/repos/central
+
+https://jsonformatter.curiousconcept.com/#
+
+package ownFakeAPI;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+
+
+import static io.restassured.RestAssured.baseURI;
+
+
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+
+
+import io.restassured.http.ContentType;
+
+
+
+public class POST_Data
+{
+@Test
+public void post_Data()
+{
+JSONObject res = new JSONObject();
+res.put("First Name", "Abdul");
+res.put("Last Name","Kalam");
+res.put("Subject id",1);
+
+baseURI = "http://localhost:3000";
+
+given()
+.contentType(ContentType.JSON)
+.accept(ContentType.JSON)
+.body(res.toJSONString())
+.when()
+.post("/Users")
+.then()
+.statusCode(201).log().all();
+
+}
+
+
+
+}
+
+
+https://github.com/typicode/json-server
+
+
+@Test
+public void Put_Users()
+{
+
+JSONObject jsnObj = new JSONObject();
+jsnObj.put("first_name", "Firdous");
+jsnObj.put("last_name","Ahmad");
+jsnObj.put("email","firdous.ahmad@reqres.in");
+baseURI = "https://reqres.in/";
+given()
+.contentType(ContentType.JSON)
+.accept(ContentType.JSON)
+.body(jsnObj.toString())
+.when()
+.put("api/users?id=2")
+.then()
+.statusCode(200).log().all();
+
+
+
+}
+
+
+
+@Test
+
+
+
+Day
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/ESNsaq_JqWpEsST1ecS5rkQBSTIr5mNVhiHZ7OA3PLg3wQ
+
+
+----------------------------------------
+package codePackage;
+
+
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+
+
+public class Rectangle implements Serializable
+{
+
+
+private double height;
+private double width;
+
+public Rectangle(double height, double width)
+{
+this.height = height;
+this.width = width;
+}
+
+public double cal_Area()
+{
+return height * width;
+}
+
+public double perimeter()
+{
+return 2 * (height + width);
+}
+
+public static void SerializeToFile(Object classObject, String fileName)
+{
+try
+{
+FileOutputStream fileStream = new FileOutputStream(fileName);
+ObjectOutputStream objectStream = new ObjectOutputStream(fileStream);
+objectStream.writeObject(classObject);
+
+objectStream.close();
+fileStream.close();
+
+
+}
+catch (IOException e)
+{
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+}
+
+public static void main(String[] args)
+{
+Rectangle rect = new Rectangle(18,78);
+SerializeToFile(rect,"D:\\Clients\\Zensar\\RATestingBatch\\SimpleJavaPractice\\rectSerialized");
+System.out.println("Serialized has Completed Sucessfully...");
+}
+
+}
+
+-------------------------------------------------------
+
+https://www.youtube.com/watch?v=seBJgbMOwKw
+
+-------------------------------------------------------
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/personal/pramod_chandratre_zensar_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpramod%5Fchandratre%5Fzensar%5Fcom%2FDocuments%2FRecordings%2FInvite%20for%20API%20Automation%20Testing%20Training%2D20220524%5F093138%2DMeeting%20Recording%201%2Emp4&parent=%2Fpersonal%2Fpramod%5Fchandratre%5Fzensar%5Fcom%2FDocuments%2FRecordings&ga=1
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/personal/pramod_chandratre_zensar_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpramod%5Fchandratre%5Fzensar%5Fcom%2FDocuments%2FRecordings%2FInvite%20for%20API%20Automation%20Testing%20Training%2D20220524%5F093138%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpramod%5Fchandratre%5Fzensar%5Fcom%2FDocuments%2FRecordings&ga=1
+---------------------------------------------------------------------
+
+https://www.youtube.com/watch?v=89yWXXIOisk&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG
+Video number 1 to 7
+------------------------------------------------
+
+https://www.youtube.com/watch?v=68XLP0ayjPA
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EThB8H3qxX1ElOHVzED8D7oBEv0dklHsOVzz7EQ8E40pSA
+------------------------------------------------------------------
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EThB8H3qxX1ElOHVzED8D7oBEv0dklHsOVzz7EQ8E40pSA
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EThB8H3qxX1ElOHVzED8D7oBEv0dklHsOVzz7EQ8E40pSA
+
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EZmenpgicwhDvbVf0d4AM1ABGnUo68nIObTLbjvAseuwIg
+https://zensar-my.sharepoint.com.office.prod.zensar.myshn.net/:v:/p/pramod_chandratre/EZmenpgicwhDvbVf0d4AM1ABGnUo68nIObTLbjvAseuwIg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

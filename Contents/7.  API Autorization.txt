@@ -1,0 +1,47 @@
+API Autorization
+============================
+10 Types of API Authorization
+2) Bearer Token
+3) Send request with Authorization
+4) Add authorization for collection
+5) Inherit auth from parent
+
+===========================
+URL: https://api.github.com
+URI: /user/repos
+
+
+https://api.github.com/user/repos
+
+https://docs.github.com/en/rest/reference/repos#list-organization-repositories
+
+- Create new collection
+
+- GET request: create new request to get all github APIs
+	- Go to github accoount
+	- login--setting--developer setting
+	- peronal access token---> select required access
+	- generate token
+	- copy and paste it in postman
+	- try without and with token
+	- without token ==> Status: 401 Unauthorized 
+	- with valid token  ==> Status : 200 Success
+
+=======================================
+https://developer.github.com/v3/repos/contents/#create-a-file
+
+- POST Request
+- End point: /user/repos
+- URL: 
+
+JSON Body
+
+{
+"Name": "Hello-World",
+"Description": "First repo created using API",
+"Private": True,
+"has_issue": True,
+"has_project": True,
+"has_wiki": True
+}
+

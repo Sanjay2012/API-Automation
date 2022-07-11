@@ -1,0 +1,1932 @@
+23 Automation Tools 
+
+. I can act as Developer any coding experience. 
+. I can act as Tester
+
+Test Levels
+------------
+1. Unit  - I have experience in Unit testing (Junit/Nunit/TestNg)
+2. Integration
+3. System
+4. UAT 
+
+
+Pre_requsites
+----------------
+
+1. Java Knowledge
+
+2. Unit Testing Framework Knowledge - Junit/TestNG
+
+3. BDD (Behaviour Driven Development Knowledge) - Gherkin language knowledge
+
+4. RestAPI Testing knowledge
+
+5. POSTMAN 
+
+6. Node JS
+
+7. JSON Server
+
+
+I want know about your Background knowledge
+--------------------------------------------------------
+
+
+1. Java, Selenium, BDD  (Gherkin Cucumber)
+
+Any body is having knowledge in Java collections.
+
+
+
+Objectives
+-------------
+
+Prereqisites Recap session on the below mentioned points  
+-------------------------------------------------------------------
+
+Java
+1. Simple Java Class, Objects, Constructors concepts.
+
+2. TestNG - Annotations, Paramerization, execution file with XML, 
+Annotation attributes(priority, depends on Methods) 
+
+3. BDD Gherkin language (with simple example) 
+
+4. Maven environment (shall we have recap ) -  
+
+
+1. Introduction to REST API
+
+2. How to use RESTAssured  to do the testing the REST API
+
+3. How to test CRUD operation
+
+4. How to Create our own RESTAPI by using the NODE js and JSON server 
+
+5. How to do Parameterization RESTAPI using RESTAssured. 
+
+
+
+1. Latest Eclipse version will Come along with Maven Project 
+
+2. It is going to give the support Till java 17 version
+
+Constructor
+---------------
+
+Just like method. 
+
+1. When i create an object, instace of the class is created.
+
+At the time of calling constructor, memory for the object is allocated in the memory.
+
+It is special type of method which is used to initialize the object.
+
+
+By using the new keyword we are creating the object.
+
+
+WebDriver driver = new ChromeDriver(); // It will create an object for Chormedriver/Chrome Browser , the instance will be called and chrome browser will be launched.
+
+Note :
+---------
+
+  It is called Constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class, IT is because java compiler creates a default constuctor if your classs doent have any.
+
+Rule for Creating the Java Constructor
+----------------------------------------------
+
+1. Constructor name must be same as its class name
+
+2. A Constrctor must have no explicit return type
+
+3. A Java constructor cannot be abstract, statci, final.
+
+but we can use access modifiers while declaring the constructors.
+
+
+Maven 
+--------
+
+   Apache Maven is software project managment and comprehension tool. 
+
+Based on the concetp of Project Object Model (POM) .
+
+Maven can manage a projects build, Reporting and documentation from central piece of information. 
+
+Using maven we can build and mange any java based projects.
+
+
+POM
+------
+
+
+POM - Stands for Project Object Model. It is fundamental unit of work in Maven. 
+
+ It is a XML file that resides in the base directory of the project as pom.xml
+
+POM contains information about the project and various configuration details used by maven to build the projects.
+
+POM has some configuration files that can be specified inside this.
+
+1. Project dependencies
+
+2. plugins
+
+3. goals
+
+4. build profiles
+
+5. project versions
+
+6. developers
+
+7. mailing list
+
+
+
+POM.xml file
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zensar.apitesting</groupId>
+  <artifactId>com.zensar.apitesting.restAssured</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+</project>
+
+
+
+Project root :  This is project root tag, You need to specify the basic schema setting such as apache schema and w3.org specification.
+
+Model version :  4.0.0
+
+Group id : This is an id of project group. 
+This is generally unique amongst an organization or a project.  
+
+For ex :  a banking group 
+
+   com.zensar.bank has all bank releated projects 
+   com.zensar.api 
+
+Artifact Id :
+  This is an id of the project, This is generally name of the project, for ex : Consumer_banking, Along with Group id, Th artifact id defines the locations with in the repository.
+
+   com.zensar.api.Rest-Assured
+
+
+What is API ?
+
+It is computing interface which enables communication and data exchange between two separate software systems.
+
+
+Software system that exeuctes an API includes several functions/Subroutines that anohter software can perform.
+
+API defines request can be made, How to make request, data formats that can be used. between two sofware systesm.
+
+
+The data which is getting populated 
+
+The data are :
+
+1. name 
+2. Address
+3. Working hours
+4. website link
+5. contact number
+
+Is permanent data or Temp data 
+-------------------------------------
+
+
+Raw data ( which is following No SQL data base)
+
+Few Example for No SQL database
+---------------------------------------
+
+1. Properties Class
+2. JSON file format
+3. XML file format.
+
+
+1. Key-Values Stores
+
+The main idea here is using a hash table where there is a unique key and a pointer to a particular item of data. 
+The Key/Value model is the simplest and easiest to implement. But it is inefficient when you are only interested in querying or updating part of a value, 
+among other disadvantages.
+
+Key-value pair storage databases store data as a hash table where each key is unique, and the value can be a JSON, BLOB(Binary Large Objects), string, XML 
+
+
+Example
+-------------
+
+The data are :
+
+Key and value pair combination of data.
+
+1. name : "The Best Hotel"
+2. Address : "12, My City View road"
+3. Working hours : " 9 AM to 6 PM"
+4. website link : "https://www.thebesthotel.in"
+5. contact number : "0452-234671
+
+
+db.json
+-----------
+{
+[
+  "drivers" :
+   "chromeKey" : "webdriver.chrome.driver",
+   "chormeDriverPath" : "D:\\Clients\\Zensar\\RATestingBatch\\SimpleJavaPractice\\BrowserDrivers\\chromedriver.exe",
+],
+  "firefoxKey" : "webdriver.chrome.driver",
+   "firefoxDriverPath" : "D:\\Clients\\Zensar\\RATestingBatch\\SimpleJavaPractice\\BrowserDrivers\\chromedriver.exe",
+]
+}
+
+
+WebService Vs API 
+-----------------------
+
+WebSevice is a collection of Open source protocols and standards used for exchanging data between systems or Applications
+
+API is a software interface that allows two applications to interact with each other without any user involvement.
+
+
+What is API ?
+
+``````````````````Application Programming interface is a set functions that allows interaction between two software applications. 
+It enable data exchange between two systems written in same or different langages.
+
+
+HTTP response status codes
+--------------------------------------
+
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+Informational responses (100–199) - 
+
+Successful responses (200–299)
+
+Redirection messages (300–399)
+
+Client error responses (400–499)
+
+Server error responses (500–599)
+
+
+Queued at 1.02 s
+Started at 1.02 s
+Resource Scheduling		DURATION
+Queueing	
+​
+					0.79 ms
+Connection Start		DURATION
+Stalled	
+​
+					0.30 ms
+Request/Response		DURATION
+Request sent	
+​
+					0.15 ms
+Waiting (TTFB)	
+​
+					1.07 s
+Content Download	
+​
+					0.35 ms
+ 					1.08 s
+
+API Testing 
+----------------
+
+ Is Black Box or White Box ?
+
+It is Black Box 
+
+How do i test this ?
+
+By sending the HTTP/HTTPS request, we are hitting the server and getting the response , validate based on the respose code,body, parameter, etc..
+
+What are all the two types of API's available ?
+
+REST API and SOAP API 
+
+SOAP API - SImple Object Access Protocol defined by W3C for sending and receiving webservices request and responses, SOAP used the XML format to send and receive the request response and hence the data is platform indepdent data.
+SOAP message are exchanged between the provider and receiving applications.
+
+
+REST API 
+-------------
+
+REST is Repesentational state Transfer, REST used URI to expose business logic & is Easy to Implement .
+It used both JSON and XML. REST faster as compared to SOAP but less secure that SOAP.
+
+POSTMAN can be used to test RESTAPI, REST casn be implemented SOAP as it can be implemented on protocol and soap is a protocol.
+
+RESTAPI Testing
+-----------------------
+It is the testing of REST API that could be written in any language like Java, C#. etc. SO ti will not cover SOAP API's and the some tools are mentioned below can be used for API Testing
+
+ POSTMAN, SOAPUI, REST Template, Jersey, JMeter Even using Rest Assured (Which is a tool to test a restAPI)
+
+REST Assured 
+-----------------
+
+ This is a tool/Framework to test RESTAPI which is used with Java language, IT can be easily used with Maven/Gradle and along with JUNIT/TestNG
+
+REST Assured is a technology to test REST API's, REST Assured is wrapper around Apache REST Client library form Jway company.
+
+It supports GET, POST, PUT, PATCH, DELETE, Options, head requests and can be used to validate & verify the response of these requirements.
+
+Pre_requsites
+-----------------
+
+1. Eclipse IDE
+
+2. Maven Project / Java Project 
+
+3. RestAssured. Jar/ POM.xml dependency 
+
+Lets see simple example
+----------------------------
+
+1. Create Simple Maven Project
+2. Provide the name of the Project as zensar.restAssuredPractice
+3. GO to POM.xml file 
+4. we need to Add Dependency for RESTAssured. (go to Maven Central Repository) 
+5. https://mvnrepository.com/search?q=restAssured
+6. https://mvnrepository.com/artifact/io.rest-assured/rest-assured to download the dependency / Jar file 
+
+7. <dependencies>
+  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.0.1</version>
+    <scope>test</scope>
+</dependency>  
+  </dependencies>
+
+8. Create a package under src/java/test folder 
+9. Create a Class and provide some name   FistRestAssuredTest
+
+
+
+POJO Class
+-------------
+Plain Old Java Object
+Accepted widely due to their maintenace. They are easy to read and write.
+
+IT doesnot have any naming conventions for properties and methods. it is not tied with to any java framework.
+
+
+Key Individual symbols
+---------------------------
+
+HTTP/1.1 is the valid HTTP protocol version
+200 OK is status code.
+
+Sample Program
+---------------------
+package restAssured.simple;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class FistRestAssuredTest {
+
+	public static void main(String[] args) 
+	{
+		//RestAssured is class , it has lot of static methods are there 
+ // all static methods are following the POJO class methodology 
+		
+		Response res = RestAssured.get("https://reqres.in/api/users?page=2");
+		int status = res.getStatusCode();		
+		System.out.println("The status code is.."+status);
+		
+		System.out.println(res.getBody().asString());
+		System.out.println(res.getContentType());
+		System.out.println(res.getStatusLine());
+		System.out.println(res.getHeader("Content-Type"));		 
+      
+	}
+
+}
+
+
+import static io.restassured.RestAssured.*; 
+
+Inorder avoid Calling the Get method by using the Class name calle RestAssured.
+
+
+We will try to convert the Java based application testing to TestNG based application Testing
+_-----------------------------------------------------------------------------------------------------------
+
+1. We need to download and configure the TestNG in our eclipse
+Goto the URL
+
+https://testng.org/doc/download.html
+
+2. To add the TestNG Dependency, we need navigate to URL 
+
+  https://mvnrepository.com/artifact/org.testng/testng
+
+
+Sample Testcode 
+
+package restAssured.TestNG;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.get;
+
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class FirstRestAssuredTest 
+{
+	
+  @Test
+  public void get_Users() 
+  {	 
+			 baseURI = "https://reqres.in";
+			  Response res = get("/api/users?page=2");
+			  int statuscode = res.getStatusCode();
+			  System.out.println(statuscode);
+			  
+			  	  if(statuscode==201)
+			  	  {
+			  		  System.out.println("Pass");
+			  	  }
+			  	  else
+			  	  {
+			  		  System.out.println("Fail");
+			  	  }
+	  
+  }
+  
+}
+
+
+Another Sample Code
+--------------------------
+
+package restAssured.TestNG;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.get;
+
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class FirstRestAssuredTest 
+{
+	
+  @Test
+  public void get_Users() 
+  {	 
+	  baseURI = "https://reqres.in";
+	  Response res = get("/api/users?page=2");
+	  int statuscode = res.getStatusCode();
+	  System.out.println(statuscode);
+	  Assert.assertEquals(statuscode, 200);	 
+	  
+  }
+  @Test
+  public void get_Users1() 
+  {	 
+	  baseURI = "https://reqres.in/api/users?page=2";
+	  Response res = get(baseURI);
+	  int statuscode = res.getStatusCode();
+	  System.out.println(statuscode);
+	  Assert.assertEquals(statuscode, 201);	 
+	  
+  }
+  
+}
+
+Plan for today's session
+-----------------------------
+
+1.Refresh Session on TestNG
+  
+1. Do we have knowledge on all annotation  ?
+2. Do we have knowledge on Annotation attributes (priority, dependsonMethods)
+3. Excuting the Testcase from xml file
+4. TestNG data provider
+5. TestNG Parameter 
+
+2. How Verify the element or data is present in response (validating the data or body)
+3. How to work with HashMap and Map concept in order to store/post the data
+4. JSON path finder usage
+5. JSONObject Class to post the data in to RestAPI service.
+
+
+Test NG Execution ORder
+--------------------------------
+
+This is my Test1 testcase1..
+This is my Test1 testcase2..
+This is Test2 Testcase 1
+This is Test2 Testcase 2
+This is Test2 Testcase 3
+This is Test2 Testcase 4
+PASSED: test_2
+PASSED: testcase4
+PASSED: testcase3
+PASSED: test_1
+PASSED: testcase1
+PASSED: testcase2
+
+
+Run 2
+-------
+
+This is my Test1 testcase1..
+This is my Test1 testcase2..
+PASSED: test_2
+PASSED: test_1
+
+Run 3 - Test 2
+------------------
+This is Test2 Testcase 1
+This is Test2 Testcase 2
+This is Test2 Testcase 3
+This is Test2 Testcase 4
+PASSED: testcase3
+PASSED: testcase2
+PASSED: testcase4
+PASSED: testcase1
+
+
+package testngPractice;
+
+import org.testng.annotations.Test;
+
+public class Test1 
+{	
+	@Test  
+	public static void test_1()
+	{
+		System.out.println("This is my Test1 testcase1..");
+	}		
+	
+	@Test  
+	public static void test_2()
+	{
+		System.out.println("This is my Test1 testcase2..");
+	}	
+
+}
+
+
+package testngPractice;
+
+import org.testng.annotations.Test;
+
+public class Test2
+{
+	@Test
+	public void testcase1()
+	{
+		System.out.println("This is Test2 Testcase 1");
+	}
+	@Test
+	public void testcase2()
+	{
+		System.out.println("This is Test2 Testcase 2");
+	}
+	@Test
+	public void testcase3()
+	{
+		System.out.println("This is Test2 Testcase 3");
+	}
+	@Test
+	public void testcase4()
+	{
+		System.out.println("This is Test2 Testcase 4");
+	}
+	
+
+}
+
+
+package testngPractice;
+
+import org.testng.annotations.Test;
+
+public class Test2
+{
+	@Test(priority=0)
+	public void testcase1()
+	{
+		System.out.println("This is Test2 Testcase 1");
+	}
+	@Test(priority=1)
+	public void testcase2()
+	{
+		System.out.println("This is Test2 Testcase 2");
+	}
+	@Test(priority=2)
+	public void testcase3()
+	{
+		System.out.println("This is Test2 Testcase 3");
+	}
+	@Test(priority=3)
+	public void testcase4()
+	{
+		System.out.println("This is Test2 Testcase 4");
+	}
+	
+
+}
+
+
+package testngPractice;
+
+import org.testng.annotations.Test;
+
+public class Test2
+{
+	@Test(priority=0)
+	public void testcase1()
+	{
+		System.out.println("This is Test2 Testcase 1");
+	}
+	
+	@Test(priority=1,dependsOnMethods= {"testcase4"})
+	public void testcase2()
+	{
+		System.out.println("This is Test2 Testcase 2");
+	}
+	
+	@Test(priority=2,dependsOnMethods= {"testcase2"})
+	public void testcase3()
+	{
+		System.out.println("This is Test2 Testcase 3");
+	}
+	
+	@Test(priority=3,dependsOnMethods= {"testcase1"})
+	public void testcase4()
+	{
+		System.out.println("This is Test2 Testcase 4");
+	}
+	
+
+}
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupTest" guice-stage="DEVELOPMENT">
+<groups>
+<run>
+<include name="smokeTest"></include>
+</run>
+</groups>
+  <test name="Execute two diffent test" verbose="2">
+    <classes>
+      <class name="testngPractice.Test1"/>
+      <class name="testngPractice.Test2"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupTest" guice-stage="DEVELOPMENT">
+<groups>
+<run>
+<include name="smokeTest"></include>
+</run>
+</groups>
+  <test name="Test1" verbose="2">
+    <classes>
+      <class name="testngPractice.Test1"/>     
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Test2" verbose="2">
+    <classes>
+      <class name="testngPractice.Test2"/>     
+    </classes>
+  </test> <!-- Default test -->   
+</suite> <!-- Default suite -->
+
+
+2. How Verify the element or data is present in response (validating the data or body)
+-----------------------------------------------------------------------------------------------------
+
+1. How to Find the Json Body response and validate the body value, which equal or not 
+
+1. Copy the JSON reponse from the Browser
+2. Search any online JSON path finder (in order to work with complex JSON format) 
+   here is URL - https://jsonpathfinder.com/
+
+3. Paste the JSON response and based on the node and collection array click and identify the values 
+
+4. ex : 
+
+{
+			"id": 8,
+			"email": "lindsay.ferguson@reqres.in",
+			"first_name": "Lindsay",
+			"last_name": "Ferguson",
+			"avatar": "https://reqres.in/img/faces/8-image.jpg"
+		},
+
+If you want to identify the value of ID
+
+data[1].id - JSON path 
+
+
+Example Program
+----------------------
+
+package restAssured.TestNG;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class GetRequest 
+{
+	@Test
+	public void vaidate_BodyData()
+	{
+		
+		  baseURI = "https://reqres.in";
+		  
+		  given().get("/api/users?page=2").then() .statusCode(200)
+		  .body("data[1].id",equalTo(8)).log().all();
+		 
+	}
+	
+	@Test
+	public void vaidate_TextData()
+	{
+		baseURI = "https://reqres.in";
+		
+		 get("/api/users?page=2").then().body("data[0].first_name", equalTo("Michael")).log().all();   
+			 
+	}
+
+}
+
+package restAssured.TestNG;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class GetRequest 
+{
+	/*
+	 * @Test public void vaidate_BodyData() {
+	 * 
+	 * baseURI = "https://reqres.in";
+	 * 
+	 * given() .get("/api/users?page=2") .then() .statusCode(200)
+	 * .body("data[1].id",equalTo(8)).log().all();
+	 * 
+	 * }
+	 * 
+	 * @Test public void vaidate_TextData() { baseURI = "https://reqres.in";
+	 * 
+	 * get("/api/users?page=2").then().body("data[0].first_name",
+	 * equalTo("Michael")).log().all();
+	 * 
+	 * }
+	 */
+	
+	@Test
+	public void vaidate_multipleData()
+	{
+		baseURI = "https://reqres.in";
+		
+		 get("/api/users?page=2").then().body("data.first_name", hasItems("Michael","Lindsay")).log().all();   
+			 
+	}
+
+}
+
+
+Java HashMap Example
+Let's see a simple example of HashMap to store key and value pair.
+
+import java.util.*;  
+public class HashMapExample1{  
+ public static void main(String args[]){  
+   HashMap<Integer,String> map=new HashMap<Integer,String>();//Creating HashMap    
+   map.put(1,"Mango");  //Put elements in Map  
+   map.put(2,"Apple");    
+   map.put(3,"Banana");   
+   map.put(4,"Grapes");   
+       
+   System.out.println("Iterating Hashmap...");  
+   for(Map.Entry m : map.entrySet()){    
+    System.out.println(m.getKey()+" "+m.getValue());    
+   }  
+}  
+}  
+
+It is easy remember the way to post the data to server.
+
+package restAssured.TestNG;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.testng.annotations.Test;
+
+public class Test_PostData 
+{
+	@Test
+	public void test_Post()
+	{
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		map.put("name", "Mohan");
+		map.put("role","Trainer");
+		map.put("id", 1);		
+		System.out.println(map);		
+	}
+
+}
+
+{role=Trainer, name=Mohan, id=1} - The result is almost same as JSON format.
+
+After using the JSONSimple Dependency, we can see the result 
+
+{"role":"Trainer1","name":"Mohan1","id":2}
+
+Since we have not store and post this data into the server, 
+reason is it is not in the proper JSON format, 
+In order send this data to server , 
+we need some JOSN formater tools/Jar/Dependency files.
+
+If you want to send the data to server in teh specified JSON format , 
+we need some more dependency/Jar file in our environment.
+
+1. GSON - Google
+2. JackSon - General data-binding functionality for Jackson: works on core streaming API
+3. JSON - JSON is a light-weight, language independent, data interchange format. See http://www.JSON.org/ The files in this package implement JSON encoders/decoders in Java. It also includes the capability to convert between JSON and XML, HTTP headers, Cookies, and CDL.
+4. JSON simple 
+
+We have to go Maven Central repository to download the following the JSON formater jar files.
+
+Will take JSON simple dependency
+
+<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple.wso2/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple.wso2</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.wso2v1</version>
+</dependency>
+
+
+And put it in to you POM.xml file.
+
+
+@Test
+	public void test_PostJSONFormat()
+	{	 
+		JSONObject res = new JSONObject();		
+		res.put("name", "Mohan1");
+		res.put("role","Trainer1");
+		res.put("id", 2);		
+		System.out.println(res.toJSONString());		
+	}
+
+
+package restAssured.TestNG;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+public class Test_PostData 
+{
+	/*
+	 * @Test public void test_Post() { Map<String, Object> map = new HashMap<String,
+	 * Object>();
+	 * 
+	 * map.put("name", "Mohan"); map.put("role","Trainer"); map.put("id", 1);
+	 * System.out.println(map); }
+	 */
+	
+	@Test
+	public void test_PostJSONFormat()
+	{	 
+		JSONObject res = new JSONObject();		
+		res.put("name", "Mohan1");
+		res.put("job","Trainer1");
+		 
+		System.out.println(res.toJSONString());	
+		baseURI = "https://reqres.in/api";
+		
+		given()
+			.body(res.toJSONString())
+		.when()
+			.post("/users")
+		.then()
+			.statusCode(200).log().all();
+		
+	}
+
+}
+
+The HTTP Header - 
+---------------------
+
+When you visit a website, 
+Your browser sends request to the webServer to obtain data or information from it, 
+
+Ex: an HTML file (webpage) Both request - HTTP Request - 
+and in the server's response, some meta-information is exchanged  
+in addition to the actual data.
+
+This is summarized in the HTTP header, 
+
+Contents
+
+The Most important HTTP request and response headerare 
+
+Function of Header
+
+Header Image
+
+The Individul lines are called "Header fields", Each (execpt the first ) Consists of a Name/Value pair separated byu a colon.
+
+Example
+
+Date: Thu, 19 May 2022 06:25:43 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 83
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"53-b86tajT0VkxgZk4Js0qDLKyy+F8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=M0%2Bq%2FIxirAaWP2Mr2k47e3tKT9FAQhxbuapQFkOYi0cOV8JVuFO%2BvJrzUIuBB3n%2B7V7L0G%2FP5FJNmsB9PqwGBv9XiRv%2BrnTwQZNCZWme5s7ypn8tvZklVHkOfzs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 70dac1c40cde6ee8-BOM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+
+Here is POST request OUTPUT
+------------------------------------
+
+[RemoteTestNG] detected TestNG version 7.5.0
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"name":"Mohan1","job":"Trainer1"}
+HTTP/1.1 201 Created
+Date: Thu, 19 May 2022 06:25:43 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 83
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"53-b86tajT0VkxgZk4Js0qDLKyy+F8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=M0%2Bq%2FIxirAaWP2Mr2k47e3tKT9FAQhxbuapQFkOYi0cOV8JVuFO%2BvJrzUIuBB3n%2B7V7L0G%2FP5FJNmsB9PqwGBv9XiRv%2BrnTwQZNCZWme5s7ypn8tvZklVHkOfzs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 70dac1c40cde6ee8-BOM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "name": "Mohan1",
+    "job": "Trainer1",
+    "id": "47",
+    "createdAt": "2022-05-19T06:25:43.273Z"
+}
+PASSED: test_PostJSONFormat
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+
+{
+    "id": "989",
+    "createdAt": "2022-05-19T06:36:30.143Z"
+}
+
+Example for different ways to use the Content Type
+----------------------------------------------------------------
+
+Response resp1 = given().log().all().header("Content-Type","application/json")
+   .body(inputPayLoad).when().post(addUserUrl);
+System.out.println("Status code - " +resp1.getStatusCode());
+
+
+Response resp1 = given().log().all().contentType("application/json")
+   .body(inputPayLoad).when().post(addUserUrl);
+
+
+
+package restAssured.TestNG;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+public class Test_PostData 
+{
+	private Object contentType;
+
+	/*
+	 * @Test public void test_Post() { Map<String, Object> map = new HashMap<String,
+	 * Object>();
+	 * 
+	 * map.put("name", "Mohan"); map.put("role","Trainer"); map.put("id", 1);
+	 * System.out.println(map); }
+	 */
+	
+	@Test
+	public void test_PostJSONFormat()
+	{	 
+		JSONObject res = new JSONObject();		
+		res.put("name", "Mohan1");
+		res.put("job","Trainer1");
+		 
+		System.out.println(res.toJSONString());	
+		baseURI = "https://reqres.in/api";
+	// I telling to my server my Content Type is specifically its JSON or not 
+		given()
+			//.header("Content-Type", "application/json")
+		//or
+			.contentType(ContentType.JSON)
+			.body(res.toJSONString())
+		.when()
+			.post("/users")
+		.then()
+			.statusCode(201).log().all();
+		
+	}
+
+}
+
+In order work with this, we need to import the package
+
+import io.restassured.http.ContentType;
+
+
+Example
+------------
+
+package restAssured.TestNG;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+public class Test_PostData 
+{
+	private Object contentType;
+
+	/*
+	 * @Test public void test_Post() { Map<String, Object> map = new HashMap<String,
+	 * Object>();
+	 * 
+	 * map.put("name", "Mohan"); map.put("role","Trainer"); map.put("id", 1);
+	 * System.out.println(map); }
+	 */
+	
+	@Test
+	public void test_PostJSONFormat()
+	{	 
+		JSONObject res = new JSONObject();		
+		res.put("name", "Mohan1");
+		res.put("job","Trainer1");
+		 
+		System.out.println(res.toJSONString());	
+		baseURI = "https://reqres.in/api";
+	// I telling to my server my Content Type is specifically its JSON or not 
+		given()
+			//.header("Content-Type", "application/json")
+		//or
+		//when receive the response i should accept only when it's Json format
+			.contentType(ContentType.JSON)			
+			.body(res.toJSONString())
+		.when()
+		    .accept(ContentType.JSON)
+			.post("/users")
+		.then()
+			.statusCode(201).log().all();
+		
+	}
+
+}
+
+PUT Operation
+-------------------
+
+When you perform PUT Operation , 
+you are basically updating the information, 
+Here Server never generate the id for this transaction.
+
+package restAssured.TestNG;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+
+public class Patch_Delete {
+	
+	@Test
+	public void test_Patch()
+	{	 
+		JSONObject res = new JSONObject();		
+		res.put("name", "Mohan1");
+		res.put("job","Trainer");
+		 
+		System.out.println(res.toJSONString());	
+		baseURI = "https://reqres.in/api";
+	// I telling to my server my Content Type is specifically its JSON or not 
+		given()
+			//.header("Content-Type", "application/json")
+		//or
+		//when receive the response i should accept only when it's Json format
+			.contentType(ContentType.JSON)			
+			.body(res.toJSONString())
+		.when()
+		    .accept(ContentType.JSON)
+			.put("/users")
+		.then()
+			.statusCode(200).log().all();
+		
+	}
+
+
+}
+
+
+
+Ex :  Result
+---------------
+
+{"name":"Mohan1","job":"Trainer"}
+HTTP/1.1 200 OK
+Date: Thu, 19 May 2022 06:56:54 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"48-ZUHVAF8NvoOHNe+Rq2P0QqNBCj8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1hA9PdjBwY48QSIn2i2YoXWvgHVtdZHUgU2yqiWt%2FmLcAgkd2%2BLkoZlglI%2BBSJ5P3zRIqVZFjmVkpMaYuC09dVRj%2BZxbg%2FNDR4LqApI6UMtPT9t1Cf4x1y5etG4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 70daef72ad0431ff-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "name": "Mohan1",
+    "job": "Trainer",
+    "updatedAt": "2022-05-19T06:56:54.461Z"
+}
+
+
+@Test
+	public void test_DeleteAPI()
+	{
+		baseURI = "https://reqres.in";
+		
+		given() 
+	  		.delete("/api/users?page=2")
+	  	.then()
+	  	  .statusCode(204).log().all();
+		
+	}
+
+
+How to Create our own API for Testing
+--------------------------------------------
+
+Prereqsites
+--------------
+
+1. Node.js
+
+2. JSON Server 
+
+After you install Node Js , we have to install the JSON server
+
+ npm install -g json-server here is command
+
+after we need start the my JSON server
+
+
+json-server --watch db.json
+
+
+package ownFakeAPI;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItems;
+
+import org.testng.annotations.Test;
+
+public class Get_OwnAPI 
+{
+
+	
+	  @Test(dependsOnMethods= {"test_Get_Subjects"})
+	  public void test_Get_Users() 
+	  { 
+		  
+		baseURI = "http://localhost:3000/";
+	    given().get("/Users").then().statusCode(200).log().all();
+	   
+	  }
+	
+	@Test
+	public void test_Get_Subjects()
+	{
+		baseURI = "http://localhost:3000";
+		  
+		  given() 
+		  	.get("/Subjects") 
+		  .then() 
+		  	.statusCode(200).log().all();
+		  	//.body("[0][\"First Name\"]",equalTo("Mohan"));
+	}
+}
+
+
+
+
+
+package ownFakeAPI;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import static io.restassured.RestAssured.baseURI;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+
+public class POST_Data 
+{
+	@Test
+	public void post_Data()
+	{		
+		JSONObject res = new JSONObject();		
+		res.put("First Name", "Abdul");
+		res.put("Last Name","Kalam");
+		res.put("Subject id",1);
+		
+		baseURI = "http://localhost:3000";
+		
+		given()
+			.contentType(ContentType.JSON) 
+			.accept(ContentType.JSON)
+			.body(res.toJSONString())
+		.when()
+		  .post("/Users")		  
+		.then()		   
+		  .statusCode(201).log().all();
+		
+	}
+
+}
+
+
+package ownFakeAPI;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+public class DeleteData 
+{
+	@Test
+	public void delete_Data()
+	{
+		baseURI = "http://localhost:3000";
+		
+		when()
+		   .delete("/Users/4")
+		.then()
+		   .statusCode(200);
+		   
+	}
+	 
+
+}
+
+Understanding about the query strings
+-----------------------------------------------
+
+http://localhost:3000/Subjects?title=Automation
+
+It will fetch only the value which contains the title is equal to automation
+
+GET /posts?title=json-server&author=typicode
+GET /posts?id=1&id=2
+GET /comments?author.name=typicode
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="CollectionTest">
+    <classes>
+      <class name="ownFakeAPI.POST_Data"/>
+      <class name="ownFakeAPI.Get_OwnAPI"/>
+      <class name="ownFakeAPI.DeleteData"/>
+    </classes>
+  </test> <!-- CollectionTest -->
+</suite> <!-- Suite -->
+
+
+
+Data Driven Testing
+------------------------
+
+public Object[][] data_driven()
+
+{
+    retrun new Object [][]  {   values   }
+    
+}
+
+
+package ownFakeAPI;
+
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.DataProvider;
+
+public class Post_DDT {
+	
+  @Test(dataProvider = "dp")
+  public void post_DataSet(String fname, String Lname, int id) 
+  {
+	  
+	    JSONObject res = new JSONObject();		
+		res.put("First Name", fname);
+		res.put("Last Name",Lname);
+		res.put("Subject id",id);
+		
+		baseURI = "http://localhost:3000";
+		
+		given()
+			.contentType(ContentType.JSON) 
+			.accept(ContentType.JSON)
+			.body(res.toJSONString())
+		.when()
+		  .post("/Users")		  
+		.then()		   
+		  .statusCode(201).log().all();
+	  
+  }
+  @DataProvider
+  public Object[][] dp() 
+  {
+    return new Object[][] 
+    {
+    			new Object[] {"Rahul", "Sharma", 1 },
+    			new Object[] {"Soniya", "Gandhi", 2 },
+    			new Object[] {"Narendra", "Modi", 1 },
+   	};
+  }
+}
+
+
+
+package test;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class WriteJSON {
+
+	public static void main(String[] args) 
+	{
+		JSONObject emp = new JSONObject();
+		
+		emp.put("First Name", "Abdul");
+		emp.put("Last Name","Kalam");
+		emp.put("Subject id",1);
+		
+		JSONObject empObject = new JSONObject();
+		
+		empObject.put("employee", emp);
+		
+        JSONObject emp1 = new JSONObject();
+		
+		emp.put("First Name", "Mohan");
+		emp.put("Last Name","Jayabalan");
+		emp.put("Subject id",1);
+		
+		JSONObject empObject1 = new JSONObject();
+		
+		empObject.put("employee", emp);
+		
+		JSONArray employeelist = new JSONArray();
+		employeelist.add(empObject);
+		employeelist.add(empObject1);
+		
+		try 
+		{
+			FileWriter file = new FileWriter("D:\\Clients\\Zensar\\employee.json");
+			file.write(employeelist.toJSONString());
+			file.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		 
+
+	}
+
+}
+
+
+package test;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class ReadJSOn {
+
+	public static void main(String[] args) throws IOException, ParseException 
+	{
+		
+		JSONParser jsonparser = new JSONParser();
+		
+		try 
+		{
+			FileReader reader = new FileReader("D:\\Clients\\Zensar\\employee.json");
+			Object obj = jsonparser.parse(reader);
+			
+			JSONArray employeelist = (JSONArray) obj;
+			System.out.println(employeelist);
+			
+			 
+		} 
+		catch (FileNotFoundException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		 
+
+	}
+
+}
+
+
+
+Serialization In Java
+-------------------------
+
+Serialization is an important programming concept, 
+It is applicable to all major programming languges. 
+
+It is the process where you can convert an instance of a class(object of a class) into Byte Stream. 
+This Byte stream can then be stored as a file on the disk.
+
+Or can also sent to another computer via the network.
+
+Serialization can also be used to save the state of Object when the program shut down or hibernates.
+
+Once the state is saved on the disk using Serialization, we can restore the state by Deserilizing the class from disk.
+
+We have some Serializable interfaces
+
+  Java.io.Serilizable - Marker Interface
+  java.io.Externalizable - Not Marker Interface
+
+      Externalizable interface has methods 
+      readExternal(ObjectInput input)
+      writeExternal(ObjectOutput output)
+
+This type of Interface is called as Marker Interface. 
+Which means that you do no have to implement any method, 
+If your class derives from this interface, 
+This is just a marker and the Java Runtime, 
+When trying to to Serialize the Class, 
+Will just check for the presence of this interface in the class, 
+If Serializable interface is persent in the class inhertiance hierrachy, 
+Java runtime will take care of Serialization of the class.
+
+Let us Inherit the Serializable interface in our class.
+
+We have to perform some taks
+
+1. We will create a new FileOutPutStream of a file where we want to serialize the class.
+
+2. We will then ObjectOutputStream on the FileOutputStream created in Step1
+
+3. we will then write the object in the ObjectOutputStream
+
+4. Finally we will close all the steam Objects to save properly write and terminate all stream.
+
+
+
+Step 1 : Open the FileOutputStream to create a file Object on disk.
+   this file object will be used to write the serialized bytes of an object
+
+Step 2
+
+  Create a ObjectOutputStream, this class takes a file stream.
+This class is responisible for converting the object of any type into a byte stream.
+
+Step 3 :
+
+ Object OutputStream.WriteObject method takes an Object and Converts it into a ByteStream. Then it writes the Byte stream into the file using the File Stream that we created in step 1
+
+ Step 4 :
+
+  We have to Close the stream one by one .
+
+   
+
+¬í sr codePackage.Rectangle]
+óûŽ9½ D heightD widthxp@2      @S€     
+
+this shows what exactly serialization means and how we can serialize object in java,
+
+
+package codePackage;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Rectangle implements Serializable
+{
+	
+	
+	private double height;
+	private double width;
+	
+	public Rectangle(double height, double width)
+	{
+		this.height = height;
+		this.width = width;
+	}
+	
+	public double cal_Area() 
+	{
+		return height * width;
+	}
+	
+	public double perimeter()
+	{
+		return 2 * (height + width);
+	}
+	
+	public static void SerializeToFile(Object classObject, String fileName)
+	{
+		try 
+		{
+			 FileOutputStream fileStream = new FileOutputStream(fileName);
+			ObjectOutputStream objectStream = new ObjectOutputStream(fileStream);
+			objectStream.writeObject(classObject);
+			
+			objectStream.close();
+			fileStream.close();
+			
+			
+		} 
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+		
+		public static void main(String[] args)
+		{
+			Rectangle rect = new Rectangle(18,78);
+			SerializeToFile(rect,"D:\\Clients\\Zensar\\RATestingBatch\\SimpleJavaPractice\\rectSerialized");
+			System.out.println("Serialized has Completed Sucessfully...");
+		}
+		 
+	}
+ 
+
+Deserializing to an Object in Java
+----------------------------------------
+
+1. We will create a new FileINputStream to read the file which contains the serialized byte stream of the target class, Rectangle class in our case.
+
+2. We will Create ObjectInputstream on the FileINputStream 
+
+3. We will then read the object using ObjectInputStream and store it in a variable of the type Rectangle
+
+4. Finally we will close all the system objects to save properly wirte and terimate all streams.
+
+package codePackage;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Rectangle implements Serializable
+{
+	
+	
+	private double height;
+	private double width;
+	
+	public Rectangle(double height, double width)
+	{
+		this.height = height;
+		this.width = width;
+	}
+	
+	public double cal_Area() 
+	{
+		return height * width;
+	}
+	
+	public double perimeter()
+	{
+		return 2 * (height + width);
+	}
+	
+	public static void SerializeToFile(Object classObject, String fileName)
+	{
+		try 
+		{
+			 FileOutputStream fileStream = new FileOutputStream(fileName);
+			ObjectOutputStream objectStream = new ObjectOutputStream(fileStream);
+			objectStream.writeObject(classObject);
+			System.out.println("Serialized has Completed Sucessfully...");
+			
+			objectStream.close();
+			fileStream.close();
+			
+			
+		} 
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+		
+	public static Object DeserializeFormatFileToObject(String filename)  
+	{
+		
+	try {
+			FileInputStream fileStream = new FileInputStream(new File(filename));
+			ObjectInputStream objectstream = new ObjectInputStream(fileStream);
+			
+			Object deserializeObject = objectstream.readObject();
+			
+			objectstream.close();
+			fileStream.close();
+			return deserializeObject; 
+			
+			
+		} 
+	    catch (IOException e) 
+	    {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			return null;
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		Rectangle rect = new Rectangle(10,20);
+		SerializeToFile(rect,"rectSerialized1");
+		
+		Rectangle deSerializedRect = (Rectangle) DeserializeFormatFileToObject("rectSerialized1");
+		System.out.println("Rect area is..."+deSerializedRect.cal_Area());
+	}
+		 
+	}
+
+
+
+The Reason , we need to study the concept is..
+------------------------------------------------------
+
+1. In Real Time application, we can also receive repsonses that are failures, In such a case, RestAPI may return a completely different response body.  One such format of failied response may be ...
+
+ 
+
+{   
+
+   "FaultId" : "User already exists",
+    "fault": "FAULT_USER_ALREADY_EXISTS"
+}
+
+
+Suppose if your are using the class called JSONSucessResponse to deserialize the above response. 
+
+It will not work..
+This is because RestAssured will not find the nodes, SucessCode and Message in the response body like mentioned above.
+
+
+It is null will be coming.
+
+
+
+public class JSONFailureResponse 
+{
+  String FaultId;
+  String falut;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

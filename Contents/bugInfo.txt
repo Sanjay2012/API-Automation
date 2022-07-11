@@ -1,0 +1,6 @@
+Following are stepts to reproduce the bug
+1. login to application
+2. Create new project
+3. Create new bug issue with project key
+4. Add comment for bug issue
+5. add attachment 

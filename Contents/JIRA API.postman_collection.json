@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "77b9675c-2a97-4ab7-8621-fb1e46a3ad9f",
+		"name": "JIRA API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18509797"
+	},
+	"item": [
+		{
+			"name": "login to app",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"Shiv2020\", \r\n    \"password\": \"Shiv@2020\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/auth/1/session",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"auth",
+						"1",
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get session info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=2ED32CB97291F4267C98F86483EEC17C",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\": \"Shiv2020\", \r\n    \"password\": \"Shiv@2020\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/auth/1/session",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"auth",
+						"1",
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bug Issue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=2ED32CB97291F4267C98F86483EEC17C",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " { \r\n     \"fields\": {\r\n        \"project\": {\r\n            \"key\": \"IB\"\r\n        },\r\n        \"summary\": \"Credit card defect\",\r\n        \"description\": \"logging credit card issue-1\",\r\n        \"issuetype\": {\r\n            \"name\": \"Bug\"\r\n        }\r\n     }\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/api/2/issue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"2",
+						"issue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get issue info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=2ED32CB97291F4267C98F86483EEC17C",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/rest/api/2/issue/10008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"2",
+						"issue",
+						"10008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Issue",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=82848B8CA4622FF8349106EA51A7BE28",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/api/2/issue/10001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"2",
+						"issue",
+						"10001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bug Issue for adding comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=2ED32CB97291F4267C98F86483EEC17C",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"Hey, How are you?\",\r\n    \"visibility\": {\r\n        \"type\": \"role\",\r\n        \"value\": \"Administrators\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/api/2/issue/10008/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"2",
+						"issue",
+						"10008",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update comment of issue",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=82848B8CA4622FF8349106EA51A7BE28",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"Hey I have updated the comment\",\r\n    \"visibility\": {\r\n        \"type\": \"role\",\r\n        \"value\": \"Administrators\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/api/2/issue/10009/comment/10005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"2",
+						"issue",
+						"10009",
+						"comment",
+						"10005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout session",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=82848B8CA4622FF8349106EA51A7BE28",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/rest/auth/1/session",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"auth",
+						"1",
+						"session"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
