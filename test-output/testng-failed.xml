@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jiraApiAutomation.JiraApiAutomation">
+      <class name="deserialization.DeserilizeTest">
         <methods>
-          <include name="loginToJira"/>
-          <include name="verifyBugAndIssue"/>
-          <include name="setBaseURI"/>
-          <include name="addBugIssue"/>
+          <include name="postPlace"/>
+          <include name="baseURI"/>
+          <include name="getPlace"/>
         </methods>
-      </class> <!-- jiraApiAutomation.JiraApiAutomation -->
+      </class> <!-- deserialization.DeserilizeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
