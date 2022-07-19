@@ -1,0 +1,65 @@
+## Steps
+
+1) Create Maven project with Cucumber and RestAssured dependency
+
+2) Define Project structure with Cucumber framework setup
+
+3) Create feature file with test cases (Scenarios)
+
+4) Implement step definition file with support code
+
+5) Create Test runner class to run feature file
+
+6) Create Utils file to define all reusable request and response specification
+   ex.  i)  request and response spec builder
+   		ii) logging method (loging request and response)
+   		iii) methods to read properties file (global values)
+   		iv) Method to read Json response
+   		
+7) Create POJO class for serialization and Deserilization JSON payload
+
+8) Create logging method into Utils class for logging request and response
+
+9) Develop End2End Functionality test with all validations and assertions
+
+10) Create properties file to drive all global variables from properties file 
+      (Create method in Utils file to read global variables)
+      
+11) Create Enums class for constants and methods to centralize all resources details
+
+12) Implement data driven mechanism to drive data dynamically from feature file
+		i.e prepare test data file contains methods 
+		    i) handle serialization with different attributes (generalize)
+		    ii) methods to handle response paylod required to drive another test/scenario
+		    
+13) Implement parameterization to run test with multiple data sets using cucumber keyword
+	(Scenario Outline, Examples: |||||)
+
+14) Add more test and implement tagging mechanism to run selected test from test rummer class
+   tags="@sanity"  --> run only scenario/feature tagged with sanity
+   tags= "@sanity or @regression"--> runs scenarios tagged with @sanity , @regression
+   
+15) Implement pre and post conditions using cucumber hooks
+    ex. 
+    @After("@Tag")
+    @Before("@updateAPI" or @deleteAPI)
+    {
+      // code required before run mentioned tags if resource not present
+    }
+
+16) Execute complete framework from command line
+	mvn clean compile
+	mvn clean test
+	mvn clean install
+17) Generate reports for test execution result
+   Ex. Add pretty, html, json and xml plugins into test runners
+    Note: We can use "https://github.com/damianszczepanik/maven-cucumber-reporting" plugin
+    
+   
+   mvn clean test verify
+
+18) Implement Maven driven global values into test for dynamic execution
+
+19) Integrate framework with CI/CD Jenkins
+       
+20) Implement parameterized Jenkins Job to choose the global values at run time
